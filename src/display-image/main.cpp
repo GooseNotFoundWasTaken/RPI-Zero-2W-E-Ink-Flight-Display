@@ -42,11 +42,6 @@ int main() {
     }
 
     // Display
-    EPD_init();
-    PIC_display(image.data());  // <-- pass pointer to vector data
-    EPD_sleep();
-    std::this_thread::sleep_for(std::chrono::seconds(5));
-
     EPD_init_Fast();
     PIC_display(image.data());  // <-- same here
     EPD_sleep();
